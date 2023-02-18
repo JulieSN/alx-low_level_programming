@@ -8,29 +8,37 @@
  */
 int main(void)
 {
-int n1 = 48;
-	int a = 0;
-	int b;
-	int com = 44;
+	int n1, n2, n3, n4;
 
-	while (a <= 99)
-
-		b = a + 1;
-		while (b <= 99)
+	for (n1 = 48; n1 <= 57; c++)
+	{
+	for (n2 = 48; n2 <= 57; n2++)
+	{
+	for (n3 = 48; n3 <= 57; n3++)
+	{
+	for (n4 = 48; n4 <= 57; n4++)
+	{
+		if (((n3 + n4) > (n1 + n2) && n3 >= n1) || n1 < n3)
 		{
-			putchar((a / 10) + n1);
-			putchar((a % 10) + n1);
-			putchar(32);
-			putchar((b / 10) + n1);
-			putchar((b % 10) + n1);
-			if (a != 98 || b != 99)
-			{
-				putchar(com);
-				putchar(32);
-			}
-			b += 1;
+		putchar(n1);
+		putchar(n2);
+		putchar('');
+		putchar(n3);
+		putchar(n4);
+
+		if (n1 + n2 + n3 + n4 == 227 && c == 57)
+		{
+		break;
 		}
-		a += 1;
+		else
+		{
+		putchar(',');
+		putchar('');
+		}
+		}
+	}
+	}
+	}
 	}
 	putchar('\n');
 	return (0);
