@@ -10,7 +10,7 @@ int main(void)
 {
 	int n1, n2, n3, n4;
 
-	for (n1 = 48; n1 <= 57; c++)
+	for (n1 = 48; n1 <= 57; n1++)
 	{
 	for (n2 = 48; n2 <= 57; n2++)
 	{
@@ -22,7 +22,7 @@ int main(void)
 		{
 		putchar(n1);
 		putchar(n2);
-		putchar('');
+		putchar(' ');
 		putchar(n3);
 		putchar(n4);
 
@@ -33,7 +33,7 @@ int main(void)
 		else
 		{
 		putchar(',');
-		putchar('');
+		putchar(' ');
 		}
 		}
 	}
