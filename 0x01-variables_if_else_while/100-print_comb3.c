@@ -4,31 +4,32 @@
  * main - Entry Point
  * Description - Prints the numbers from 00 to 99, numbers separated by
  *        a comma followed by a space, in ascending order.
- *
- * Return: Always 0.
+ *The two digits are different
+ * Return: Always 0
  */
+
 int main(void)
+
 {
-	int digit1, digit2;
-
-	for (digit1 = '0'; digit1 <= '9'; digit1++)
-	{
-		for (digit2 = 0; digit2 <= 9; digit2++)
-		{
-		if (digit2 != digit1)
-		{
-		putchar(digit1);
-		putchar(digit2);
-
-			if (digit1 != '8' || (digit2 == "8" && digit1 != '9'))
-			{
-			putchar(',');
-			putchar(' ');
-			}
-		}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+	int n1 = 48;
+int n2;
+int com = 44;
+while (n1 <= 57)
+{
+n2 = n1 + 1;
+while (n2 <= 57)
+{
+putchar(n1);
+putchar(n2);
+if (n1 != 56 || n2 != 57)
+{
+putchar(com);
+putchar(32);
+}
+n2 += 1;
+}
+n1 += 1;
+}
+putchar('\n');
+return (0);
 }
