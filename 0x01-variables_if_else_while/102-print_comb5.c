@@ -8,28 +8,30 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+int n1 = 48;
+	int a = 0;
+	int b;
+	int com = 44;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
-	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+	while (a <= 99)
+
+		b = a + 1;
+		while (b <= 99)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			putchar((a / 10) + n1);
+			putchar((a % 10) + n1);
+			putchar(32);
+			putchar((b / 10) + n1);
+			putchar((b % 10) + n1);
+			if (a != 98 || b != 99)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-
-				putchar(',');
-				putchar(' ');
+				putchar(com);
+				putchar(32);
 			}
+			b += 1;
 		}
+		a += 1;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
