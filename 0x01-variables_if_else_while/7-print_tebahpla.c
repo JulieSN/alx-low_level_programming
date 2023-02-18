@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	char lr;
+	char letter;
 
-	for ((lr = 'z'; lr >= 'a'; lr--))
-		putchar(lr);
+	for (letter = 'z'; letter >= 'a'; letter--)
+		putchar(letter);
 
 	putchar('\n');
 
