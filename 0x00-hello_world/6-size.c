@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- *
+ *Desciption - Size is not grandeur
  * Return: Always 0 (Success)
  */
 int main(void)
